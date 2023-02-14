@@ -14,12 +14,10 @@ public class BookService {
     @Autowired
     private BookRepository bRepo;
 
-    public void save(Book b) {
-        bRepo.save(b);
+    public void save(Book b) { bRepo.save(b);
     }
 
-    public List<Book> getAllBook() {
-        return bRepo.findAll();
+    public List<Book> getAllBook() { return bRepo.findAll();
     }
 
     public Book  getBookById(int id) {

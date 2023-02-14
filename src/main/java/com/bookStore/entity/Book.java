@@ -12,12 +12,14 @@ public class Book {
     private String name;
     private String author;
     private String price;
+    private String year;
 
-    public Book(int id, String name, String author, String price) {
+    public Book(int id, String name, String author, String price, String year) {
         this.id = id;
         this.name = name;
         this.author = author;
         this.price = price;
+        this.year=year;
     }
 
     public Book() {
@@ -54,5 +56,13 @@ public class Book {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
     }
 }
